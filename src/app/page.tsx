@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className='h-screen flex flex-col p-8 max-w-5xl mx-auto bg-neutral-950'>
-      <div className='flex gap-4'>
+      <div className='flex flex-wrap  gap-4'>
         {links.map((link) => {
           return (
             <Link
@@ -40,5 +40,9 @@ const links = [
   {
     label: "Gesture Animation",
     href: "/gesture-animation",
+  },
+  {
+    label: "Stagger Animation",
+    href: "/stagger-animation",
   },
 ];
